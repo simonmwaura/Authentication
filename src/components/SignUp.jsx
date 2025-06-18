@@ -17,13 +17,13 @@ const Signup = () => {
             console.log("Invalid Username")
         }
 
-
         if(password.length()<8){
             console.log()
         }
         if(password != confirm_password){
             console.log("passwords do not match")
         }
+        
     }
 
 
@@ -109,13 +109,10 @@ const Signup = () => {
                 </label>
                 
                 <input
-                  value={password}
-                  onChange={handlePassword}
+                  value={password} onChange={handlePassword}
                   type="password"
-                  id="password"
                   className="w-full px-4 py-3 bg-white/20 text-white placeholder-blue-100 border border-white/30 rounded-lg focus:ring-2 focus:ring-white focus:border-white transition"
-                  placeholder="••••••••"
-                  required
+                  placeholder="••••••••" required
                 />
               </div>
               
@@ -126,13 +123,10 @@ const Signup = () => {
                 </label>
                 
                 <input
-                  value={confirm_password}
-                  onChange={handleConfirmPassword}
+                  value={confirm_password} onChange={handleConfirmPassword}
                   type="password"
-                  id="confirm-password"
                   className="w-full px-4 py-3 bg-white/20 text-white placeholder-blue-100 border border-white/30 rounded-lg focus:ring-2 focus:ring-white focus:border-white transition"
-                  placeholder="••••••••"
-                  required
+                  placeholder="••••••••" required
                 />
               </div>
               
