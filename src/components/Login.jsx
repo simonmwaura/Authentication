@@ -39,7 +39,7 @@ const Login = () => {
                             <label htmlFor="email" className="block text-sm font-medium text-white mb-1">Email Address</label>
                             <div className="relative">
                                 <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"><FiMail className="w-5 h-5 text-blue-200" /></div>
-                                    <input type="email" value = {email} onChange = {handleEmail} className="w-full pl-10 pr-4 py-3 bg-white/20 text-white border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition" required />
+                                    <input type="email" value = {email} onChange = {handleEmail} className="w-full pl-10 pr-4 py-3 bg-white/20 text-white border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition" placeholder="name@gmail.com"  required />
                                 </div>
                                 </div>
                                 <div>
@@ -47,7 +47,9 @@ const Login = () => {
                                     <div className="relative">
                                         <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"><FiLock className="w-5 h-5 text-blue-200" /> </div>
                                         <input type={showPassword ? "text" : "password"} value = {password} onChange = {handlePassword}
-                                            className="w-full pl-10 pr-10 py-3 bg-white/20 text-white border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition" required />
+                                            className="w-full pl-10 pr-10 py-3 bg-white/20 text-white border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent transition" 
+                                            placeholder="••••••••" 
+                                            required />
                                         <button type="button" className="absolute inset-y-0 right-0 flex items-center pr-3" onClick={PasswordVisibility} >
                                             {showPassword ? ( <FiEyeOff className="w-5 h-5 text-blue-200 hover:text-white" /> ) : ( <FiEye className="w-5 h-5 text-blue-200 hover:text-white" /> )}
                                         </button>
